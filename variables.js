@@ -1,0 +1,12 @@
+var miNumero1 = 15;
+console.log(miNumero1);
+
+let miNumero2 = 20;
+console.log(miNumero2);
+
+//Probando comentarios de una sola linea en JavaScript
+/*
+    Probando comentarios de 
+    multiples lineas en JavaScript 
+*/
+
