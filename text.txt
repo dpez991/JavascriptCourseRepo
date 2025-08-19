@@ -1,1 +1,0 @@
-Se hizo la conexión correctamente al repositorio mediante git
