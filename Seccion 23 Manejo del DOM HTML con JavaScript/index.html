@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM con JavaScript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- No son necesarios los ids con este nuevo metodo de acceder a los elementos del DOM -->
+    <h1 class="azul">Ejemplo DOM con JavaScript</h1>
+    <p class="azul">Saludos!</p>
+    <p class="azul">Otro parrafo</p>
+
+<!-- Nuestra parte de JavaScript debe de ir despues de los elementos HTML -->
+<script>
+    // Cuarta forma de acceder por querySelectorAll elementos del DOM que ademas tienen aplicado cierto estilo css mediante JS
+    let elementos = document.querySelectorAll("p.azul");
+    console.log(`No. elementos de la clase: ${elementos.length}`);
+    for(elemento of elementos){
+        console.log(`${elemento.innerHTML}`);
+    }
+    
+
+    // Tercera forma de acceder por class name mediante clases de estilos css a los elementos del DOM mediante JS
+    //let elementos = document.getElementsByClassName("azul");
+    //console.log(`No. elementos de la clase: ${elementos.length}`);
+    //for(elemento of elementos){
+    //    console.log(`${elemento.innerHTML}`);
+    //}
+    
+    // Segugunda forma de acceder por tag name mediante la etiqueta del html a los elementos del DOM mediante JS
+    //let parrafos = document.getElementsByTagName("p");
+    //console.log(`No. parrafos: ${parrafos.length}`);
+    //for(i = 0; i < parrafos.length; i++){
+    //    console.log(`${i} - ${parrafos[i].innerHTML}`);
+    //}
+
+    // Primera forma de acceder individualmente mediante un id a los elementos del DOM mediante JS
+    //let cabecero = document.getElementById("cabecero");
+    //console.log(`Valor cabecero: ${cabecero.innerHTML}`);
+    //let parrafo = document.getElementById("parrafo");
+    //console.log(`Valor parrafo: ${parrafo.innerHTML}`);
+    //parrafo.innerHTML = "Nuevo valor del parrafo";
+    //cabecero.innerHTML = "Cambio de cabecero";
+</script>
+
+</body>
+</html>
